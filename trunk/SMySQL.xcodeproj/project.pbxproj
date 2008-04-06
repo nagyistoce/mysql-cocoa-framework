@@ -1,0 +1,1730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93C8C63D0DA5D8CD00B2391A /* MCPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3904EE97AE00AD80EC /* MCPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C63E0DA5D8CD00B2391A /* MCPFastQueries.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3B04EE97AE00AD80EC /* MCPFastQueries.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C63F0DA5D8CD00B2391A /* MCPNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3D04EE97AE00AD80EC /* MCPNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6400DA5D8CD00B2391A /* MCPResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3F04EE97AE00AD80EC /* MCPResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6410DA5D8CD00B2391A /* MCPResultPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE4104EE97AE00AD80EC /* MCPResultPlus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6420DA5D8CD00B2391A /* SMySQL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE4304EE97AE00AD80EC /* SMySQL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6430DA5D8CD00B2391A /* SMySQLConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE4404EE97AE00AD80EC /* SMySQLConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6440DA5D8CD00B2391A /* SMySQL_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF5E0370ADEE00C91783 /* SMySQL_Prefix.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		93C8C6450DA5D8CD00B2391A /* MCPConnectionWinCont.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516E810538B9000000000A /* MCPConnectionWinCont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6460DA5D8CD00B2391A /* MCPDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516E830538B9000000000A /* MCPDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6470DA5D8CD00B2391A /* MCPNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9DB5306C11A08005F9DC5 /* MCPNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6490DA5D8CD00B2391A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		93C8C64A0DA5D8CD00B2391A /* MCPConnectionWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0D516E7C0538B8E60000000A /* MCPConnectionWindow.nib */; };
+		93C8C64C0DA5D8CD00B2391A /* MCPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE3A04EE97AE00AD80EC /* MCPConnection.m */; };
+		93C8C64D0DA5D8CD00B2391A /* MCPFastQueries.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE3C04EE97AE00AD80EC /* MCPFastQueries.m */; };
+		93C8C64E0DA5D8CD00B2391A /* MCPNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE3E04EE97AE00AD80EC /* MCPNull.m */; };
+		93C8C64F0DA5D8CD00B2391A /* MCPResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE4004EE97AE00AD80EC /* MCPResult.m */; };
+		93C8C6500DA5D8CD00B2391A /* MCPResultPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE4204EE97AE00AD80EC /* MCPResultPlus.m */; };
+		93C8C6510DA5D8CD00B2391A /* MCPConnectionWinCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516E820538B9000000000A /* MCPConnectionWinCont.m */; };
+		93C8C6520DA5D8CD00B2391A /* MCPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516E840538B9000000000A /* MCPDocument.m */; };
+		93C8C6530DA5D8CD00B2391A /* MCPNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F9DB5406C11A08005F9DC5 /* MCPNumber.m */; };
+		93C8C6550DA5D8CD00B2391A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		93C8C6560DA5D8CD00B2391A /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCFFE6C04EE99C300AD80EC /* libz.1.1.3.dylib */; };
+		93C8C6570DA5D8CD00B2391A /* libmysqlclient.15.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 930FAD680DA5D51000DF9083 /* libmysqlclient.15.0.0.dylib */; };
+		93C8C6630DA5D8CE00B2391A /* MCPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3904EE97AE00AD80EC /* MCPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6640DA5D8CE00B2391A /* MCPFastQueries.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3B04EE97AE00AD80EC /* MCPFastQueries.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6650DA5D8CE00B2391A /* MCPNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3D04EE97AE00AD80EC /* MCPNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6660DA5D8CE00B2391A /* MCPResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3F04EE97AE00AD80EC /* MCPResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6670DA5D8CE00B2391A /* MCPResultPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE4104EE97AE00AD80EC /* MCPResultPlus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6680DA5D8CE00B2391A /* SMySQLConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE4404EE97AE00AD80EC /* SMySQLConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6690DA5D8CE00B2391A /* SMySQL_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF5E0370ADEE00C91783 /* SMySQL_Prefix.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		93C8C66A0DA5D8CE00B2391A /* SMySQL_static.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DB9ADBE05388B2A0000000A /* SMySQL_static.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C66B0DA5D8CE00B2391A /* MCPConnectionWinCont.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516E810538B9000000000A /* MCPConnectionWinCont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C66C0DA5D8CE00B2391A /* MCPDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516E830538B9000000000A /* MCPDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C66D0DA5D8CE00B2391A /* MCPNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9DB5306C11A08005F9DC5 /* MCPNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C66F0DA5D8CE00B2391A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		93C8C6700DA5D8CE00B2391A /* MCPConnectionWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0D516E7C0538B8E60000000A /* MCPConnectionWindow.nib */; };
+		93C8C6720DA5D8CE00B2391A /* MCPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE3A04EE97AE00AD80EC /* MCPConnection.m */; };
+		93C8C6730DA5D8CE00B2391A /* MCPFastQueries.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE3C04EE97AE00AD80EC /* MCPFastQueries.m */; };
+		93C8C6740DA5D8CE00B2391A /* MCPNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE3E04EE97AE00AD80EC /* MCPNull.m */; };
+		93C8C6750DA5D8CE00B2391A /* MCPResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE4004EE97AE00AD80EC /* MCPResult.m */; };
+		93C8C6760DA5D8CE00B2391A /* MCPResultPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE4204EE97AE00AD80EC /* MCPResultPlus.m */; };
+		93C8C6770DA5D8CE00B2391A /* MCPConnectionWinCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516E820538B9000000000A /* MCPConnectionWinCont.m */; };
+		93C8C6780DA5D8CE00B2391A /* MCPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516E840538B9000000000A /* MCPDocument.m */; };
+		93C8C6790DA5D8CE00B2391A /* MCPNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F9DB5406C11A08005F9DC5 /* MCPNumber.m */; };
+		93C8C67B0DA5D8CE00B2391A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		93C8C67C0DA5D8CE00B2391A /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCFFE6C04EE99C300AD80EC /* libz.1.1.3.dylib */; };
+		93C8C67D0DA5D8CE00B2391A /* libcrypto.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCAF5A304FD176800A8C863 /* libcrypto.0.9.dylib */; };
+		93C8C67E0DA5D8CE00B2391A /* libssl.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCAF5A604FD177F00A8C863 /* libssl.0.9.dylib */; };
+		93C8C67F0DA5D8CE00B2391A /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 930FAD6B0DA5D52F00DF9083 /* libmysqlclient.a */; };
+		93C8C68B0DA5D8CE00B2391A /* MCPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3904EE97AE00AD80EC /* MCPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C68C0DA5D8CE00B2391A /* MCPFastQueries.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3B04EE97AE00AD80EC /* MCPFastQueries.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C68D0DA5D8CE00B2391A /* MCPNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3D04EE97AE00AD80EC /* MCPNull.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C68E0DA5D8CE00B2391A /* MCPResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE3F04EE97AE00AD80EC /* MCPResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C68F0DA5D8CE00B2391A /* MCPResultPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE4104EE97AE00AD80EC /* MCPResultPlus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6900DA5D8CE00B2391A /* SMySQLConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DCFFE4404EE97AE00AD80EC /* SMySQLConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6910DA5D8CE00B2391A /* SMySQL_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCF5E0370ADEE00C91783 /* SMySQL_Prefix.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		93C8C6920DA5D8CE00B2391A /* SMySQL_bundled.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DB9ADBC05388B160000000A /* SMySQL_bundled.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6930DA5D8CE00B2391A /* MCPConnectionWinCont.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516E810538B9000000000A /* MCPConnectionWinCont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6940DA5D8CE00B2391A /* MCPDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516E830538B9000000000A /* MCPDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6950DA5D8CE00B2391A /* MCPNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F9DB5306C11A08005F9DC5 /* MCPNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93C8C6970DA5D8CE00B2391A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		93C8C6980DA5D8CE00B2391A /* MCPConnectionWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0D516E7C0538B8E60000000A /* MCPConnectionWindow.nib */; };
+		93C8C69A0DA5D8CE00B2391A /* MCPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE3A04EE97AE00AD80EC /* MCPConnection.m */; };
+		93C8C69B0DA5D8CE00B2391A /* MCPFastQueries.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE3C04EE97AE00AD80EC /* MCPFastQueries.m */; };
+		93C8C69C0DA5D8CE00B2391A /* MCPNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE3E04EE97AE00AD80EC /* MCPNull.m */; };
+		93C8C69D0DA5D8CE00B2391A /* MCPResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE4004EE97AE00AD80EC /* MCPResult.m */; };
+		93C8C69E0DA5D8CE00B2391A /* MCPResultPlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFFE4204EE97AE00AD80EC /* MCPResultPlus.m */; };
+		93C8C69F0DA5D8CE00B2391A /* MCPConnectionWinCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516E820538B9000000000A /* MCPConnectionWinCont.m */; };
+		93C8C6A00DA5D8CE00B2391A /* MCPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516E840538B9000000000A /* MCPDocument.m */; };
+		93C8C6A10DA5D8CE00B2391A /* MCPNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F9DB5406C11A08005F9DC5 /* MCPNumber.m */; };
+		93C8C6A30DA5D8CE00B2391A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		93C8C6A40DA5D8CE00B2391A /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCFFE6C04EE99C300AD80EC /* libz.1.1.3.dylib */; };
+		93C8C6A50DA5D8CE00B2391A /* libssl.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCAF5A604FD177F00A8C863 /* libssl.0.9.dylib */; };
+		93C8C6A60DA5D8CE00B2391A /* libcrypto.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCAF5A304FD176800A8C863 /* libcrypto.0.9.dylib */; };
+		93C8C6A70DA5D8CE00B2391A /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 930FAD6B0DA5D52F00DF9083 /* libmysqlclient.a */; };
+		93C8C6B60DA5D8CE00B2391A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCEFA2204EEADEB00F30895 /* main.m */; };
+		93C8C6B90DA5D8CE00B2391A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+		93C8C6E60DA5D8CE00B2391A /* SMySQL_static.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C8C6880DA5D8CE00B2391A /* SMySQL_static.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		93C8C6EA0DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		93C8C6EB0DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		93C8C6EC0DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		93C8C6ED0DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		93C8C6EE0DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		93C8C6EF0DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		93C8C6F00DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		93C8C6F10DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		93C8C6F20DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		93C8C6F30DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		93C8C6F40DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		93C8C6F50DA5D8CF00B2391A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		93C8C6DC0DA5D8CE00B2391A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93C8C6610DA5D8CE00B2391A;
+			remoteInfo = "SMySQL_static (Upgraded)";
+		};
+		93C8C6DE0DA5D8CE00B2391A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93C8C63B0DA5D8CD00B2391A;
+			remoteInfo = "SMySQL (Upgraded)";
+		};
+		93C8C6E00DA5D8CE00B2391A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93C8C6610DA5D8CE00B2391A;
+			remoteInfo = "SMySQL_static (Upgraded)";
+		};
+		93C8C6E20DA5D8CE00B2391A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93C8C6890DA5D8CE00B2391A;
+			remoteInfo = "SMySQL_bundled (Upgraded)";
+		};
+		93C8C6E40DA5D8CE00B2391A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93C8C6B10DA5D8CE00B2391A;
+			remoteInfo = "CLI_Test (Upgraded)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D516E7D0538B8E60000000A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MCPConnectionWindow.nib; sourceTree = "<group>"; };
+		0D516E810538B9000000000A /* MCPConnectionWinCont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPConnectionWinCont.h; sourceTree = "<group>"; };
+		0D516E820538B9000000000A /* MCPConnectionWinCont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPConnectionWinCont.m; sourceTree = "<group>"; wrapsLines = 0; };
+		0D516E830538B9000000000A /* MCPDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPDocument.h; sourceTree = "<group>"; };
+		0D516E840538B9000000000A /* MCPDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPDocument.m; sourceTree = "<group>"; wrapsLines = 0; };
+		0D82DD6904F0D92100B97554 /* gpl.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gpl.html; sourceTree = "<group>"; };
+		0D82DD6A04F0D92100B97554 /* gpl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gpl.txt; sourceTree = "<group>"; };
+		0D82DD6B04F0D92100B97554 /* README_BIN */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README_BIN; sourceTree = "<group>"; };
+		0DB9ADBC05388B160000000A /* SMySQL_bundled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMySQL_bundled.h; sourceTree = "<group>"; };
+		0DB9ADBE05388B2A0000000A /* SMySQL_static.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMySQL_static.h; sourceTree = "<group>"; };
+		0DCAF5A304FD176800A8C863 /* libcrypto.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.0.9.dylib; path = /usr/lib/libcrypto.0.9.dylib; sourceTree = "<absolute>"; };
+		0DCAF5A604FD177F00A8C863 /* libssl.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.0.9.dylib; path = /usr/lib/libssl.0.9.dylib; sourceTree = "<absolute>"; };
+		0DCEFA2104EEADEB00F30895 /* gpl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = gpl.txt; sourceTree = "<group>"; };
+		0DCEFA2204EEADEB00F30895 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0DCEFA2404EEAEF500F30895 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		0DCEFA2504EEAF1600F30895 /* Make_DB_and_table.mysql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Make_DB_and_table.mysql; sourceTree = "<group>"; };
+		0DCEFD9904EEC2B800F30895 /* README */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		0DCEFD9A04EEC2B800F30895 /* TO_DO */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = TO_DO; sourceTree = "<group>"; };
+		0DCEFD9B04EEC2B800F30895 /* TO_INSTALL */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = TO_INSTALL; sourceTree = "<group>"; };
+		0DCFFE3904EE97AE00AD80EC /* MCPConnection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MCPConnection.h; sourceTree = "<group>"; };
+		0DCFFE3A04EE97AE00AD80EC /* MCPConnection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MCPConnection.m; sourceTree = "<group>"; };
+		0DCFFE3B04EE97AE00AD80EC /* MCPFastQueries.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MCPFastQueries.h; sourceTree = "<group>"; };
+		0DCFFE3C04EE97AE00AD80EC /* MCPFastQueries.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MCPFastQueries.m; sourceTree = "<group>"; wrapsLines = 0; };
+		0DCFFE3D04EE97AE00AD80EC /* MCPNull.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MCPNull.h; sourceTree = "<group>"; };
+		0DCFFE3E04EE97AE00AD80EC /* MCPNull.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MCPNull.m; sourceTree = "<group>"; };
+		0DCFFE3F04EE97AE00AD80EC /* MCPResult.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MCPResult.h; sourceTree = "<group>"; };
+		0DCFFE4004EE97AE00AD80EC /* MCPResult.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MCPResult.m; sourceTree = "<group>"; };
+		0DCFFE4104EE97AE00AD80EC /* MCPResultPlus.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MCPResultPlus.h; sourceTree = "<group>"; };
+		0DCFFE4204EE97AE00AD80EC /* MCPResultPlus.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MCPResultPlus.m; sourceTree = "<group>"; };
+		0DCFFE4304EE97AE00AD80EC /* SMySQL.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SMySQL.h; sourceTree = "<group>"; };
+		0DCFFE4404EE97AE00AD80EC /* SMySQLConstants.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SMySQLConstants.h; sourceTree = "<group>"; };
+		0DCFFE6C04EE99C300AD80EC /* libz.1.1.3.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = /usr/lib/libz.1.1.3.dylib; sourceTree = "<absolute>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* SMySQL_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMySQL_Prefix.h; sourceTree = "<group>"; };
+		930FAD680DA5D51000DF9083 /* libmysqlclient.15.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmysqlclient.15.0.0.dylib; path = /opt/mysql/lib/mysql/libmysqlclient.15.0.0.dylib; sourceTree = "<absolute>"; };
+		930FAD6B0DA5D52F00DF9083 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmysqlclient.a; path = /opt/mysql/lib/mysql/libmysqlclient.a; sourceTree = "<absolute>"; };
+		93C8C65F0DA5D8CD00B2391A /* Info-SMySQL.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-SMySQL.plist"; sourceTree = "<group>"; };
+		93C8C6600DA5D8CE00B2391A /* SMySQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMySQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C8C6870DA5D8CE00B2391A /* Info-SMySQL_static.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-SMySQL_static.plist"; sourceTree = "<group>"; };
+		93C8C6880DA5D8CE00B2391A /* SMySQL_static.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMySQL_static.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C8C6AF0DA5D8CE00B2391A /* Info-SMySQL_bundled.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-SMySQL_bundled.plist"; sourceTree = "<group>"; };
+		93C8C6B00DA5D8CE00B2391A /* SMySQL_bundled.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SMySQL_bundled.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C8C6C10DA5D8CE00B2391A /* CLI_Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLI_Test; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C8C6DA0DA5D8CE00B2391A /* Info-Prepare_Distributions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Prepare_Distributions.plist"; sourceTree = "<group>"; };
+		93C8C6DB0DA5D8CE00B2391A /* Prepare_Distributions.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Prepare_Distributions.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F9DB5306C11A08005F9DC5 /* MCPNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPNumber.h; sourceTree = "<group>"; };
+		95F9DB5406C11A08005F9DC5 /* MCPNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPNumber.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93C8C6540DA5D8CD00B2391A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C6550DA5D8CD00B2391A /* Cocoa.framework in Frameworks */,
+				93C8C6560DA5D8CD00B2391A /* libz.1.1.3.dylib in Frameworks */,
+				93C8C6570DA5D8CD00B2391A /* libmysqlclient.15.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C67A0DA5D8CE00B2391A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C67B0DA5D8CE00B2391A /* Cocoa.framework in Frameworks */,
+				93C8C67C0DA5D8CE00B2391A /* libz.1.1.3.dylib in Frameworks */,
+				93C8C67D0DA5D8CE00B2391A /* libcrypto.0.9.dylib in Frameworks */,
+				93C8C67E0DA5D8CE00B2391A /* libssl.0.9.dylib in Frameworks */,
+				93C8C67F0DA5D8CE00B2391A /* libmysqlclient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C6A20DA5D8CE00B2391A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C6A30DA5D8CE00B2391A /* Cocoa.framework in Frameworks */,
+				93C8C6A40DA5D8CE00B2391A /* libz.1.1.3.dylib in Frameworks */,
+				93C8C6A50DA5D8CE00B2391A /* libssl.0.9.dylib in Frameworks */,
+				93C8C6A60DA5D8CE00B2391A /* libcrypto.0.9.dylib in Frameworks */,
+				93C8C6A70DA5D8CE00B2391A /* libmysqlclient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C6B70DA5D8CE00B2391A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C6E60DA5D8CE00B2391A /* SMySQL_static.framework in Frameworks */,
+				93C8C6B90DA5D8CE00B2391A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93C8C6600DA5D8CE00B2391A /* SMySQL.framework */,
+				93C8C6880DA5D8CE00B2391A /* SMySQL_static.framework */,
+				93C8C6B00DA5D8CE00B2391A /* SMySQL_bundled.framework */,
+				93C8C6C10DA5D8CE00B2391A /* CLI_Test */,
+				93C8C6DB0DA5D8CE00B2391A /* Prepare_Distributions.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* SMySQL */ = {
+			isa = PBXGroup;
+			children = (
+				0D82DD6904F0D92100B97554 /* gpl.html */,
+				0D82DD6A04F0D92100B97554 /* gpl.txt */,
+				0DCEFD9904EEC2B800F30895 /* README */,
+				0D82DD6B04F0D92100B97554 /* README_BIN */,
+				0DCEFD9A04EEC2B800F30895 /* TO_DO */,
+				0DCEFD9B04EEC2B800F30895 /* TO_INSTALL */,
+				08FB77AEFE84172EC02AAC07 /* MCPFoundationKit */,
+				0DCEFD9C04EEC99E00F30895 /* MCPApplicationKit */,
+				0DCEFA2004EEADC100F30895 /* CLI_Test */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				93C8C65F0DA5D8CD00B2391A /* Info-SMySQL.plist */,
+				93C8C6870DA5D8CE00B2391A /* Info-SMySQL_static.plist */,
+				93C8C6AF0DA5D8CE00B2391A /* Info-SMySQL_bundled.plist */,
+				93C8C6DA0DA5D8CE00B2391A /* Info-Prepare_Distributions.plist */,
+			);
+			name = SMySQL;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				930FAD6B0DA5D52F00DF9083 /* libmysqlclient.a */,
+				930FAD680DA5D51000DF9083 /* libmysqlclient.15.0.0.dylib */,
+				0DCFFE6C04EE99C300AD80EC /* libz.1.1.3.dylib */,
+				0DCAF5A304FD176800A8C863 /* libcrypto.0.9.dylib */,
+				0DCAF5A604FD177F00A8C863 /* libssl.0.9.dylib */,
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+				0D516E7C0538B8E60000000A /* MCPConnectionWindow.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* MCPFoundationKit */ = {
+			isa = PBXGroup;
+			children = (
+				0DCFFE3904EE97AE00AD80EC /* MCPConnection.h */,
+				0DCFFE3A04EE97AE00AD80EC /* MCPConnection.m */,
+				0DCFFE3B04EE97AE00AD80EC /* MCPFastQueries.h */,
+				0DCFFE3C04EE97AE00AD80EC /* MCPFastQueries.m */,
+				95F9DB5306C11A08005F9DC5 /* MCPNumber.h */,
+				95F9DB5406C11A08005F9DC5 /* MCPNumber.m */,
+				0DCFFE3D04EE97AE00AD80EC /* MCPNull.h */,
+				0DCFFE3E04EE97AE00AD80EC /* MCPNull.m */,
+				0DCFFE3F04EE97AE00AD80EC /* MCPResult.h */,
+				0DCFFE4004EE97AE00AD80EC /* MCPResult.m */,
+				0DCFFE4104EE97AE00AD80EC /* MCPResultPlus.h */,
+				0DCFFE4204EE97AE00AD80EC /* MCPResultPlus.m */,
+				0DCFFE4404EE97AE00AD80EC /* SMySQLConstants.h */,
+				0DCFFE4304EE97AE00AD80EC /* SMySQL.h */,
+				0DB9ADBE05388B2A0000000A /* SMySQL_static.h */,
+				0DB9ADBC05388B160000000A /* SMySQL_bundled.h */,
+			);
+			path = MCPFoundationKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		0DCEFA2004EEADC100F30895 /* CLI_Test */ = {
+			isa = PBXGroup;
+			children = (
+				0DCEFA2104EEADEB00F30895 /* gpl.txt */,
+				0DCEFA2404EEAEF500F30895 /* README.txt */,
+				0DCEFA2504EEAF1600F30895 /* Make_DB_and_table.mysql */,
+				0DCEFA2204EEADEB00F30895 /* main.m */,
+			);
+			path = CLI_Test;
+			sourceTree = "<group>";
+		};
+		0DCEFD9C04EEC99E00F30895 /* MCPApplicationKit */ = {
+			isa = PBXGroup;
+			children = (
+				0D516E810538B9000000000A /* MCPConnectionWinCont.h */,
+				0D516E820538B9000000000A /* MCPConnectionWinCont.m */,
+				0D516E830538B9000000000A /* MCPDocument.h */,
+				0D516E840538B9000000000A /* MCPDocument.m */,
+			);
+			path = MCPApplicationKit;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* SMySQL_Prefix.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		93C8C63C0DA5D8CD00B2391A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C63D0DA5D8CD00B2391A /* MCPConnection.h in Headers */,
+				93C8C63E0DA5D8CD00B2391A /* MCPFastQueries.h in Headers */,
+				93C8C63F0DA5D8CD00B2391A /* MCPNull.h in Headers */,
+				93C8C6400DA5D8CD00B2391A /* MCPResult.h in Headers */,
+				93C8C6410DA5D8CD00B2391A /* MCPResultPlus.h in Headers */,
+				93C8C6420DA5D8CD00B2391A /* SMySQL.h in Headers */,
+				93C8C6430DA5D8CD00B2391A /* SMySQLConstants.h in Headers */,
+				93C8C6440DA5D8CD00B2391A /* SMySQL_Prefix.h in Headers */,
+				93C8C6450DA5D8CD00B2391A /* MCPConnectionWinCont.h in Headers */,
+				93C8C6460DA5D8CD00B2391A /* MCPDocument.h in Headers */,
+				93C8C6470DA5D8CD00B2391A /* MCPNumber.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C6620DA5D8CE00B2391A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C6630DA5D8CE00B2391A /* MCPConnection.h in Headers */,
+				93C8C6640DA5D8CE00B2391A /* MCPFastQueries.h in Headers */,
+				93C8C6650DA5D8CE00B2391A /* MCPNull.h in Headers */,
+				93C8C6660DA5D8CE00B2391A /* MCPResult.h in Headers */,
+				93C8C6670DA5D8CE00B2391A /* MCPResultPlus.h in Headers */,
+				93C8C6680DA5D8CE00B2391A /* SMySQLConstants.h in Headers */,
+				93C8C6690DA5D8CE00B2391A /* SMySQL_Prefix.h in Headers */,
+				93C8C66A0DA5D8CE00B2391A /* SMySQL_static.h in Headers */,
+				93C8C66B0DA5D8CE00B2391A /* MCPConnectionWinCont.h in Headers */,
+				93C8C66C0DA5D8CE00B2391A /* MCPDocument.h in Headers */,
+				93C8C66D0DA5D8CE00B2391A /* MCPNumber.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C68A0DA5D8CE00B2391A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C68B0DA5D8CE00B2391A /* MCPConnection.h in Headers */,
+				93C8C68C0DA5D8CE00B2391A /* MCPFastQueries.h in Headers */,
+				93C8C68D0DA5D8CE00B2391A /* MCPNull.h in Headers */,
+				93C8C68E0DA5D8CE00B2391A /* MCPResult.h in Headers */,
+				93C8C68F0DA5D8CE00B2391A /* MCPResultPlus.h in Headers */,
+				93C8C6900DA5D8CE00B2391A /* SMySQLConstants.h in Headers */,
+				93C8C6910DA5D8CE00B2391A /* SMySQL_Prefix.h in Headers */,
+				93C8C6920DA5D8CE00B2391A /* SMySQL_bundled.h in Headers */,
+				93C8C6930DA5D8CE00B2391A /* MCPConnectionWinCont.h in Headers */,
+				93C8C6940DA5D8CE00B2391A /* MCPDocument.h in Headers */,
+				93C8C6950DA5D8CE00B2391A /* MCPNumber.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C6B40DA5D8CE00B2391A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		93C8C63B0DA5D8CD00B2391A /* SMySQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C8C65A0DA5D8CD00B2391A /* Build configuration list for PBXNativeTarget "SMySQL" */;
+			buildPhases = (
+				93C8C63C0DA5D8CD00B2391A /* Headers */,
+				93C8C6480DA5D8CD00B2391A /* Resources */,
+				93C8C64B0DA5D8CD00B2391A /* Sources */,
+				93C8C6540DA5D8CD00B2391A /* Frameworks */,
+				93C8C6580DA5D8CD00B2391A /* Rez */,
+				93C8C6590DA5D8CD00B2391A /* ShellScript */,
+			);
+			buildRules = (
+				93C8C6EA0DA5D8CF00B2391A /* PBXBuildRule */,
+				93C8C6EB0DA5D8CF00B2391A /* PBXBuildRule */,
+				93C8C6EC0DA5D8CF00B2391A /* PBXBuildRule */,
+			);
+			comments = "This target is generating the 'system wide' version of the framework, that should be copied in one of the Library/Frameworks/ directory to be able to use it.\n\nThis version of the framework is linked to the DYNAMIC version of the libmysqlclient library, which should be in /usr/local/lib/mysql/ (you can change this by modifying the location of the libmysqlclient.dylib file using show info pane).";
+			dependencies = (
+			);
+			name = SMySQL;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = SMySQL;
+			productReference = 93C8C6600DA5D8CE00B2391A /* SMySQL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93C8C6610DA5D8CE00B2391A /* SMySQL_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C8C6820DA5D8CE00B2391A /* Build configuration list for PBXNativeTarget "SMySQL_static" */;
+			buildPhases = (
+				93C8C6620DA5D8CE00B2391A /* Headers */,
+				93C8C66E0DA5D8CE00B2391A /* Resources */,
+				93C8C6710DA5D8CE00B2391A /* Sources */,
+				93C8C67A0DA5D8CE00B2391A /* Frameworks */,
+				93C8C6800DA5D8CE00B2391A /* Rez */,
+				93C8C6810DA5D8CE00B2391A /* ShellScript */,
+			);
+			buildRules = (
+				93C8C6ED0DA5D8CF00B2391A /* PBXBuildRule */,
+				93C8C6EE0DA5D8CF00B2391A /* PBXBuildRule */,
+				93C8C6EF0DA5D8CF00B2391A /* PBXBuildRule */,
+			);
+			comments = "This target is generating the 'system wide' version of the framework, that should be copied in one of the Library/Frameworks/ directory to be able to use it.\n\nThis version of the framework is linked to the STATIC version of the libmysqlclient library, which is in the mysql_bins directory. If you want to produce a system wide static version of the framework using your own version of the library, the easiest is to change the files to which the references in the mysql_bin group (file tab) points to, so that they point to your version of the files (and change accrodingly the search path of the target (for both header and libraries)).";
+			dependencies = (
+			);
+			name = SMySQL_static;
+			productInstallPath = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+			productName = SMySQL_static;
+			productReference = 93C8C6880DA5D8CE00B2391A /* SMySQL_static.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93C8C6890DA5D8CE00B2391A /* SMySQL_bundled */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C8C6AA0DA5D8CE00B2391A /* Build configuration list for PBXNativeTarget "SMySQL_bundled" */;
+			buildPhases = (
+				93C8C68A0DA5D8CE00B2391A /* Headers */,
+				93C8C6960DA5D8CE00B2391A /* Resources */,
+				93C8C6990DA5D8CE00B2391A /* Sources */,
+				93C8C6A20DA5D8CE00B2391A /* Frameworks */,
+				93C8C6A80DA5D8CE00B2391A /* Rez */,
+				93C8C6A90DA5D8CE00B2391A /* ShellScript */,
+			);
+			buildRules = (
+				93C8C6F00DA5D8CF00B2391A /* PBXBuildRule */,
+				93C8C6F10DA5D8CF00B2391A /* PBXBuildRule */,
+				93C8C6F20DA5D8CF00B2391A /* PBXBuildRule */,
+			);
+			comments = "This target is generating the bundled version of the framework. This is useful if you are developing an Cocoa bundle application and you want to be able to distribute it with SMySQL bundled to it (easier installation for the user of your application).\n\nIn this case you need to copy the framework produced by this target into the Contents/Frameworks/ subfolder of your application bundle.\n\nThis version of the framework is linked to the STATIC version of the libmysqlclient library, which is in the mysql_bins directory. If you want to produce a system wide static version of the framework using your own version of the library, the easiest is to change the files to which the references in the mysql_bin group (file tab) points to, so that they point to your version of the files (and change accrodingly the search path of the target (for both header and libraries)).";
+			dependencies = (
+			);
+			name = SMySQL_bundled;
+			productInstallPath = "@executable_path/../Frameworks";
+			productName = SMySQL_bundled;
+			productReference = 93C8C6B00DA5D8CE00B2391A /* SMySQL_bundled.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93C8C6B10DA5D8CE00B2391A /* CLI_Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C8C6BC0DA5D8CE00B2391A /* Build configuration list for PBXNativeTarget "CLI_Test" */;
+			buildPhases = (
+				93C8C6B40DA5D8CE00B2391A /* Headers */,
+				93C8C6B50DA5D8CE00B2391A /* Sources */,
+				93C8C6B70DA5D8CE00B2391A /* Frameworks */,
+				93C8C6BB0DA5D8CE00B2391A /* Rez */,
+			);
+			buildRules = (
+				93C8C6F30DA5D8CF00B2391A /* PBXBuildRule */,
+				93C8C6F40DA5D8CF00B2391A /* PBXBuildRule */,
+				93C8C6F50DA5D8CF00B2391A /* PBXBuildRule */,
+			);
+			dependencies = (
+				93C8C6DD0DA5D8CE00B2391A /* PBXTargetDependency */,
+			);
+			name = CLI_Test;
+			productInstallPath = /usr/local/bin;
+			productName = CLI_Test;
+			productReference = 93C8C6C10DA5D8CE00B2391A /* CLI_Test */;
+			productType = "com.apple.product-type.tool";
+		};
+		93C8C6C30DA5D8CE00B2391A /* Prepare_Distributions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C8C6D50DA5D8CE00B2391A /* Build configuration list for PBXNativeTarget "Prepare_Distributions" */;
+			buildPhases = (
+				93C8C6CC0DA5D8CE00B2391A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93C8C6DF0DA5D8CE00B2391A /* PBXTargetDependency */,
+				93C8C6E10DA5D8CE00B2391A /* PBXTargetDependency */,
+				93C8C6E30DA5D8CE00B2391A /* PBXTargetDependency */,
+				93C8C6E50DA5D8CE00B2391A /* PBXTargetDependency */,
+			);
+			name = Prepare_Distributions;
+			productInstallPath = "$(USER_LIBRARY_DIR)/Bundles";
+			productName = Prepare_Distributions;
+			productReference = 93C8C6DB0DA5D8CE00B2391A /* Prepare_Distributions.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9316CD520DA47EAA00BF4FD4 /* Build configuration list for PBXProject "SMySQL" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* SMySQL */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93C8C63B0DA5D8CD00B2391A /* SMySQL */,
+				93C8C6610DA5D8CE00B2391A /* SMySQL_static */,
+				93C8C6890DA5D8CE00B2391A /* SMySQL_bundled */,
+				93C8C6B10DA5D8CE00B2391A /* CLI_Test */,
+				93C8C6C30DA5D8CE00B2391A /* Prepare_Distributions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93C8C6480DA5D8CD00B2391A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C6490DA5D8CD00B2391A /* InfoPlist.strings in Resources */,
+				93C8C64A0DA5D8CD00B2391A /* MCPConnectionWindow.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C66E0DA5D8CE00B2391A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C66F0DA5D8CE00B2391A /* InfoPlist.strings in Resources */,
+				93C8C6700DA5D8CE00B2391A /* MCPConnectionWindow.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C6960DA5D8CE00B2391A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C6970DA5D8CE00B2391A /* InfoPlist.strings in Resources */,
+				93C8C6980DA5D8CE00B2391A /* MCPConnectionWindow.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		93C8C6580DA5D8CD00B2391A /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C6800DA5D8CE00B2391A /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C6A80DA5D8CE00B2391A /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C6BB0DA5D8CE00B2391A /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93C8C6590DA5D8CD00B2391A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MKDIRS=\"mkdir -p\"\nAUTODOC=/usr/local/bin/autodoc\nAUTODOC_FLAGS=\"-copydocs -timestamp -allclasses\"\nAUTODOC_FORMAT=html\nAUTODOC_LANGUAGE=English\nexport AD_COPYRIGHT=\"Serge Cohen\"\n\n# If autodoc is not installed, we quit without any error\ntest -x $AUTODOC || exit 0\n\nPUBLIC_DOC_INSTALLDIR=\"$SYMROOT/$PRODUCT_NAME.framework/Resources/$AUTODOC_LANGUAGE.lproj/Documentation\"\n\n# We need to write down file names here\nAUTODOC_FILES=\"MCPFoundationKit/MCPResultPlus.h MCPFoundationKit/MCPFastQueries.h MCPFoundationKit/MCPConnection.h MCPFoundationKit/MCPResult.h MCPFoundationKit/MCPNull.h MCPApplicationKit/MCPConnectionWinCont.h MCPApplicationKit/MCPDocument.h\"\nAUTODOC_DOCDIR=\"$PUBLIC_DOC_INSTALLDIR\"\n\nOTHER_AUTODOC_FLAGS=\"-typedirs -allclasses -combine -force -nosingles\"\n\nALL_AUTODOC_FLAGS=\"$AUTODOC_FLAGS $OTHER_AUTODOC_FLAGS\"\n\n$MKDIRS $PUBLIC_DOC_INSTALLDIR\n$AUTODOC $ALL_AUTODOC_FLAGS -format $AUTODOC_FORMAT -dest $AUTODOC_DOCDIR $AUTODOC_FILES\n";
+		};
+		93C8C6810DA5D8CE00B2391A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MKDIRS=\"mkdir -p\"\nAUTODOC=/usr/local/bin/autodoc\nAUTODOC_FLAGS=\"-copydocs -timestamp -allclasses\"\nAUTODOC_FORMAT=html\nAUTODOC_LANGUAGE=English\nexport AD_COPYRIGHT=\"Serge Cohen\"\n\n# If autodoc is not installed, we quit without any error\ntest -x $AUTODOC || exit 0\n\nPUBLIC_DOC_INSTALLDIR=\"$SYMROOT/$PRODUCT_NAME.framework/Resources/$AUTODOC_LANGUAGE.lproj/Documentation\"\n\n# We need to write down file names here\nAUTODOC_FILES=\"MCPFoundationKit/MCPResultPlus.h MCPFoundationKit/MCPFastQueries.h MCPFoundationKit/MCPConnection.h MCPFoundationKit/MCPResult.h MCPFoundationKit/MCPNull.h MCPApplicationKit/MCPConnectionWinCont.h MCPApplicationKit/MCPDocument.h\"\nAUTODOC_DOCDIR=\"$PUBLIC_DOC_INSTALLDIR\"\n\nOTHER_AUTODOC_FLAGS=\"-typedirs -allclasses -combine -force -nosingles\"\n\nALL_AUTODOC_FLAGS=\"$AUTODOC_FLAGS $OTHER_AUTODOC_FLAGS\"\n\n$MKDIRS $PUBLIC_DOC_INSTALLDIR\n$AUTODOC $ALL_AUTODOC_FLAGS -format $AUTODOC_FORMAT -dest $AUTODOC_DOCDIR $AUTODOC_FILES\n";
+		};
+		93C8C6A90DA5D8CE00B2391A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MKDIRS=\"mkdir -p\"\nAUTODOC=/usr/local/bin/autodoc\nAUTODOC_FLAGS=\"-copydocs -timestamp -allclasses\"\nAUTODOC_FORMAT=html\nAUTODOC_LANGUAGE=English\nexport AD_COPYRIGHT=\"Serge Cohen\"\n\n# If autodoc is not installed, we quit without any error\ntest -x $AUTODOC || exit 0\n\nPUBLIC_DOC_INSTALLDIR=\"$SYMROOT/$PRODUCT_NAME.framework/Resources/$AUTODOC_LANGUAGE.lproj/Documentation\"\n\n# We need to write down file names here\nAUTODOC_FILES=\"MCPFoundationKit/MCPResultPlus.h MCPFoundationKit/MCPFastQueries.h MCPFoundationKit/MCPConnection.h MCPFoundationKit/MCPResult.h MCPFoundationKit/MCPNull.h MCPApplicationKit/MCPConnectionWinCont.h MCPApplicationKit/MCPDocument.h MCPEntrepriseKit/MCPAttribute.h MCPEntrepriseKit/MCPClassDescription.h MCPEntrepriseKit/MCPModel.h MCPEntrepriseKit/MCPObject.h\"\n\nAUTODOC_DOCDIR=\"$PUBLIC_DOC_INSTALLDIR\"\n\nOTHER_AUTODOC_FLAGS=\"-typedirs -allclasses -combine -force -nosingles\"\n\nALL_AUTODOC_FLAGS=\"$AUTODOC_FLAGS $OTHER_AUTODOC_FLAGS\"\n\n$MKDIRS $PUBLIC_DOC_INSTALLDIR\n$AUTODOC $ALL_AUTODOC_FLAGS -format $AUTODOC_FORMAT -dest $AUTODOC_DOCDIR $AUTODOC_FILES\n";
+		};
+		93C8C6CC0DA5D8CE00B2391A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "MKDIRS=\"mkdir -p\"\nCP=\"cp -r\"\nWORK_DIR=\"$TARGET_BUILD_DIR/Distributions\"\n\nBASE_DIST_NAME=\"SMySQL\"\nVERSION_DIST=\"3.0.2\"\n\nSOURCE_FILES=\"CLI_Test MCPFoundationKit MCPApplicationKit SMySQL_Prefix.h README TO_DO TO_INSTALL gpl.txt gpl.html CLI_Test SMySQL.xcodeproj English.lproj Info-SMySQL.plist Info-SMySQL_static.plist Info-SMySQL_bundled.plist Info-Prepare_Distributions.plist\"\n\nBIN_FILES=\"SMySQL.framework SMySQL_static.framework SMySQL_bundled.framework CLI_Test\"\n\nrm -rf \"$WORK_DIR\"\n$MKDIRS \"$WORK_DIR\"\ncd \"$WORK_DIR\"\n\n#cat - > foo.txt <<EOF\n#This Foo Bar saying Hello World...\n#EOF\n\n# Preparing the source distribution:\nSOURCE_DIST_NAME=\"${BASE_DIST_NAME}_src_${VERSION_DIST}\"\n# Create a writable DMG file :\nhdiutil create -megabytes 5 Sources_Temp.dmg -layout NONE\n# Mount it just to be able to format it (and format in HFS+)\nDEV_SOURCES=`hdid -nomount Sources_Temp.dmg`\nnewfs_hfs -v \"$SOURCE_DIST_NAME\" $DEV_SOURCES\nhdiutil eject $DEV_SOURCES\n# Mount in writable way:\nhdid Sources_Temp.dmg > mount_source.log\nDEV_SOURCES=`awk '{print $1}' mount_source.log`\nVOL_SOURCES=`awk '{print $2}' mount_source.log`\n# Copy the sources to the source volume...\ncd \"$SRCROOT\"\n$CP $SOURCE_FILES $VOL_SOURCES\nfind $VOL_SOURCES -name 'CVS' -exec rm -rf {} \\;\n# Make a Tar/gz version of the distribution...\ncd $VOL_SOURCES\ncd ..\ngnutar -cvzf \"${WORK_DIR}/${SOURCE_DIST_NAME}.tgz\" ${SOURCE_DIST_NAME}\ncd \"$WORK_DIR\"\n# Copying is done, we can eject and compress the image:\nhdiutil eject $DEV_SOURCES\nhdiutil convert -format UDZO -imagekey zlib-level=9 Sources_Temp.dmg -o ${SOURCE_DIST_NAME}.dmg\n\n# Preparing the binary distribution:\nBINS_DIST_NAME=\"${BASE_DIST_NAME}_bin_${VERSION_DIST}\"\n# Create a writable DMG file :\nhdiutil create -megabytes 5 Bins_Temp.dmg -layout NONE\n# Mount it just to be able to format it (and format in HFS+)\nDEV_BINS=`hdid -nomount Bins_Temp.dmg`\nnewfs_hfs -v \"$BINS_DIST_NAME\" $DEV_BINS\nhdiutil eject $DEV_BINS\n# Mount in writable way:\nhdid Bins_Temp.dmg > mount_bin.log\nDEV_BINS=`awk '{print $1}' mount_bin.log`\nVOL_BINS=`awk '{print $2}' mount_bin.log`\n# Copy the sources to the source volume...\ncd \"$TARGET_BUILD_DIR\"\n$CP $BIN_FILES $VOL_BINS\n$CP ${SRCROOT}/README_BIN ${VOL_BINS}/README\n$CP \"${SRCROOT}/CLI_Test/README.txt\" ${VOL_BINS}/CLI_Test_README\n$CP \"${SRCROOT}/CLI_Test/Make_DB_and_table.mysql\" ${VOL_BINS}/\nmv \"${VOL_BINS}/CLI_Test\" \"${VOL_BINS}/CLI_Test.command\"\ncd \"$WORK_DIR\"\n# Copying is done, we can eject and compress the image:\nhdiutil eject $DEV_BINS\nhdiutil convert -format UDZO -imagekey zlib-level=9 Bins_Temp.dmg -o ${BINS_DIST_NAME}.dmg\n\n\n# Clean_up:\nrm -f Sources_Temp.dmg\nrm -f mount_source.log\nrm -f Bins_Temp.dmg\nrm -f mount_bin.log\n\necho Everything will be in : $WORK_DIR\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93C8C64B0DA5D8CD00B2391A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C64C0DA5D8CD00B2391A /* MCPConnection.m in Sources */,
+				93C8C64D0DA5D8CD00B2391A /* MCPFastQueries.m in Sources */,
+				93C8C64E0DA5D8CD00B2391A /* MCPNull.m in Sources */,
+				93C8C64F0DA5D8CD00B2391A /* MCPResult.m in Sources */,
+				93C8C6500DA5D8CD00B2391A /* MCPResultPlus.m in Sources */,
+				93C8C6510DA5D8CD00B2391A /* MCPConnectionWinCont.m in Sources */,
+				93C8C6520DA5D8CD00B2391A /* MCPDocument.m in Sources */,
+				93C8C6530DA5D8CD00B2391A /* MCPNumber.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C6710DA5D8CE00B2391A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C6720DA5D8CE00B2391A /* MCPConnection.m in Sources */,
+				93C8C6730DA5D8CE00B2391A /* MCPFastQueries.m in Sources */,
+				93C8C6740DA5D8CE00B2391A /* MCPNull.m in Sources */,
+				93C8C6750DA5D8CE00B2391A /* MCPResult.m in Sources */,
+				93C8C6760DA5D8CE00B2391A /* MCPResultPlus.m in Sources */,
+				93C8C6770DA5D8CE00B2391A /* MCPConnectionWinCont.m in Sources */,
+				93C8C6780DA5D8CE00B2391A /* MCPDocument.m in Sources */,
+				93C8C6790DA5D8CE00B2391A /* MCPNumber.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C6990DA5D8CE00B2391A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C69A0DA5D8CE00B2391A /* MCPConnection.m in Sources */,
+				93C8C69B0DA5D8CE00B2391A /* MCPFastQueries.m in Sources */,
+				93C8C69C0DA5D8CE00B2391A /* MCPNull.m in Sources */,
+				93C8C69D0DA5D8CE00B2391A /* MCPResult.m in Sources */,
+				93C8C69E0DA5D8CE00B2391A /* MCPResultPlus.m in Sources */,
+				93C8C69F0DA5D8CE00B2391A /* MCPConnectionWinCont.m in Sources */,
+				93C8C6A00DA5D8CE00B2391A /* MCPDocument.m in Sources */,
+				93C8C6A10DA5D8CE00B2391A /* MCPNumber.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93C8C6B50DA5D8CE00B2391A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C8C6B60DA5D8CE00B2391A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93C8C6DD0DA5D8CE00B2391A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93C8C6610DA5D8CE00B2391A /* SMySQL_static */;
+			targetProxy = 93C8C6DC0DA5D8CE00B2391A /* PBXContainerItemProxy */;
+		};
+		93C8C6DF0DA5D8CE00B2391A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93C8C63B0DA5D8CD00B2391A /* SMySQL */;
+			targetProxy = 93C8C6DE0DA5D8CE00B2391A /* PBXContainerItemProxy */;
+		};
+		93C8C6E10DA5D8CE00B2391A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93C8C6610DA5D8CE00B2391A /* SMySQL_static */;
+			targetProxy = 93C8C6E00DA5D8CE00B2391A /* PBXContainerItemProxy */;
+		};
+		93C8C6E30DA5D8CE00B2391A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93C8C6890DA5D8CE00B2391A /* SMySQL_bundled */;
+			targetProxy = 93C8C6E20DA5D8CE00B2391A /* PBXContainerItemProxy */;
+		};
+		93C8C6E50DA5D8CE00B2391A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93C8C6B10DA5D8CE00B2391A /* CLI_Test */;
+			targetProxy = 93C8C6E40DA5D8CE00B2391A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0D516E7C0538B8E60000000A /* MCPConnectionWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D516E7D0538B8E60000000A /* English */,
+			);
+			name = MCPConnectionWindow.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9316CD3A0DA47EAA00BF4FD4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				HEADER_SEARCH_PATHS = /opt/mysql/include/mysql;
+				LIBRARY_SEARCH_PATHS = /opt/mysql/lib/mysql;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SEPARATE_STRIP = NO;
+				VALID_ARCHS = "ppc64 ppc x86_64 i386 ppc970 ppc7400";
+			};
+			name = Development;
+		};
+		9316CD3B0DA47EAA00BF4FD4 /* Profiling */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				VALID_ARCHS = "ppc64 i386 x86_64 ppc";
+			};
+			name = Profiling;
+		};
+		9316CD3C0DA47EAA00BF4FD4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(NATIVE_ARCH_32_BIT)",
+					"$(NATIVE_ARCH_64_BIT)",
+					ppc,
+					ppc64,
+				);
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SEPARATE_STRIP = YES;
+				VALID_ARCHS = "ppc64 ppc x86_64 i386 ppc970 ppc7400";
+			};
+			name = Deployment;
+		};
+		9316CD3D0DA47EAA00BF4FD4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				VALID_ARCHS = "ppc64 i386 x86_64 ppc";
+			};
+			name = Default;
+		};
+		93C8C65B0DA5D8CD00B2391A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = "/usr/bin/gcc-4.0";
+				COPY_PHASE_STRIP = NO;
+				CPLUSPLUS = "/usr/bin/g++-4.0";
+				DYLIB_COMPATIBILITY_VERSION = 2.0.0;
+				DYLIB_CURRENT_VERSION = 2.3.1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SMySQL_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /opt/mysql/include/mysql;
+				INFOPLIST_FILE = "Info-SMySQL.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = /opt/mysql/lib/mysql;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+					"-lz",
+				);
+				PRODUCT_NAME = SMySQL;
+				PROFILING_CODE = YES;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		93C8C65C0DA5D8CD00B2391A /* Profiling */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = "/usr/bin/gcc-3.3";
+				COPY_PHASE_STRIP = YES;
+				CPLUSPLUS = "/usr/bin/g++-3.3";
+				DYLIB_COMPATIBILITY_VERSION = 2.0.0;
+				DYLIB_CURRENT_VERSION = 2.3.1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SMySQL_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/mysql;
+				INFOPLIST_FILE = "Info-SMySQL.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/mysql,
+					"/usr/local/mysql-5.0.51a-osx10.5-x86_64/lib",
+					"$(SRCROOT)/mysql_bins",
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "-fno-coalesce";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+				);
+				PRODUCT_NAME = SMySQL;
+				PROFILING_CODE = YES;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Profiling;
+		};
+		93C8C65D0DA5D8CD00B2391A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(NATIVE_ARCH_32_BIT)",
+					"$(NATIVE_ARCH_64_BIT)",
+					ppc,
+					ppc64,
+				);
+				CC = /usr/bin/gcc;
+				COPY_PHASE_STRIP = YES;
+				CPLUSPLUS = "/usr/bin/g++";
+				DYLIB_COMPATIBILITY_VERSION = 3.0.0;
+				DYLIB_CURRENT_VERSION = 3.0.2;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SMySQL_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /opt/mysql/include/mysql;
+				INFOPLIST_FILE = "Info-SMySQL.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = /opt/mysql/lib/mysql;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+				);
+				PRODUCT_NAME = SMySQL;
+				PROFILING_CODE = NO;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				VALID_ARCHS = "ppc64 i386 x86_64 ppc";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		93C8C65E0DA5D8CD00B2391A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = "/usr/bin/gcc-3.3";
+				CPLUSPLUS = "/usr/bin/g++-3.3";
+				DYLIB_COMPATIBILITY_VERSION = 2.0.0;
+				DYLIB_CURRENT_VERSION = 2.3.1;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SMySQL_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /usr/local/include/mysql;
+				INFOPLIST_FILE = "Info-SMySQL.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/mysql,
+					"/usr/local/mysql-5.0.51a-osx10.5-x86_64/lib",
+					"$(SRCROOT)/mysql_bins",
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "-fno-coalesce";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+				);
+				PRODUCT_NAME = SMySQL;
+				PROFILING_CODE = YES;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Default;
+		};
+		93C8C6830DA5D8CE00B2391A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = /usr/bin/gcc;
+				COPY_PHASE_STRIP = NO;
+				CPLUSPLUS = "/usr/bin/g++";
+				DYLIB_COMPATIBILITY_VERSION = 2.0.0;
+				DYLIB_CURRENT_VERSION = 2.3.1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /opt/mysql/include/mysql;
+				INFOPLIST_FILE = "Info-SMySQL_static.plist";
+				INSTALL_PATH = "~/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = /opt/mysql/lib/mysql;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = SMySQL_static;
+				PROFILING_CODE = YES;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		93C8C6840DA5D8CE00B2391A /* Profiling */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = "/usr/bin/gcc-3.3";
+				COPY_PHASE_STRIP = YES;
+				CPLUSPLUS = "/usr/bin/g++-3.3";
+				DYLIB_COMPATIBILITY_VERSION = 2.0.0;
+				DYLIB_CURRENT_VERSION = 2.3.1;
+				FRAMEWORK_VERSION = A;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = mysql_bins;
+				INFOPLIST_FILE = "Info-SMySQL_static.plist";
+				INSTALL_PATH = "~/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					mysql_bins,
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "-fno-coalesce";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = SMySQL_static;
+				PROFILING_CODE = YES;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Profiling;
+		};
+		93C8C6850DA5D8CE00B2391A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = /usr/bin/gcc;
+				COPY_PHASE_STRIP = YES;
+				CPLUSPLUS = "/usr/bin/g++";
+				DYLIB_COMPATIBILITY_VERSION = 3.0.0;
+				DYLIB_CURRENT_VERSION = 3.0.2;
+				FRAMEWORK_VERSION = A;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /opt/mysql/include/mysql;
+				INFOPLIST_FILE = "Info-SMySQL_static.plist";
+				INSTALL_PATH = "~/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = /opt/mysql/lib/mysql;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = SMySQL_static;
+				PROFILING_CODE = NO;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		93C8C6860DA5D8CE00B2391A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = "/usr/bin/gcc-3.3";
+				CPLUSPLUS = "/usr/bin/g++-3.3";
+				DYLIB_COMPATIBILITY_VERSION = 2.0.0;
+				DYLIB_CURRENT_VERSION = 2.3.1;
+				FRAMEWORK_VERSION = A;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = mysql_bins;
+				INFOPLIST_FILE = "Info-SMySQL_static.plist";
+				INSTALL_PATH = "~/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					mysql_bins,
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "-fno-coalesce";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = SMySQL_static;
+				PROFILING_CODE = YES;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Default;
+		};
+		93C8C6AB0DA5D8CE00B2391A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = /usr/bin/gcc;
+				COPY_PHASE_STRIP = NO;
+				CPLUSPLUS = "/usr/bin/g++";
+				DYLIB_COMPATIBILITY_VERSION = 2.0.0;
+				DYLIB_CURRENT_VERSION = 2.3.1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = SMySQL_Prefix.h;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /opt/mysql/include/mysql;
+				INFOPLIST_FILE = "Info-SMySQL_bundled.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /opt/mysql/lib/mysql;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = SMySQL_bundled;
+				PROFILING_CODE = YES;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		93C8C6AC0DA5D8CE00B2391A /* Profiling */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = /usr/bin/gcc;
+				COPY_PHASE_STRIP = YES;
+				CPLUSPLUS = "/usr/bin/g++";
+				DYLIB_COMPATIBILITY_VERSION = 2.0.0;
+				DYLIB_CURRENT_VERSION = 2.3.1;
+				FRAMEWORK_VERSION = A;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = mysql_bins;
+				INFOPLIST_FILE = "Info-SMySQL_bundled.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					mysql_bins,
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "-fno-coalesce";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = SMySQL_bundled;
+				PROFILING_CODE = YES;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Profiling;
+		};
+		93C8C6AD0DA5D8CE00B2391A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = /usr/bin/gcc;
+				COPY_PHASE_STRIP = YES;
+				CPLUSPLUS = "/usr/bin/g++";
+				DYLIB_COMPATIBILITY_VERSION = 3.0.0;
+				DYLIB_CURRENT_VERSION = 3.0.1;
+				FRAMEWORK_VERSION = A;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /opt/mysql/include/mysql;
+				INFOPLIST_FILE = "Info-SMySQL_bundled.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /opt/mysql/lib/mysql;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = SMySQL_bundled;
+				PROFILING_CODE = NO;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		93C8C6AE0DA5D8CE00B2391A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = /usr/bin/gcc;
+				CPLUSPLUS = "/usr/bin/g++";
+				DYLIB_COMPATIBILITY_VERSION = 2.0.0;
+				DYLIB_CURRENT_VERSION = 2.3.1;
+				FRAMEWORK_VERSION = A;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = mysql_bins;
+				INFOPLIST_FILE = "Info-SMySQL_bundled.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					mysql_bins,
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "-fno-coalesce";
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0x08800000,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = SMySQL_bundled;
+				PROFILING_CODE = YES;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Default;
+		};
+		93C8C6BD0DA5D8CE00B2391A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = /usr/bin/gcc;
+				COPY_PHASE_STRIP = NO;
+				CPLUSPLUS = "/usr/bin/g++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/build/Development\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = SMySQL_Prefix.h;
+				HEADER_SEARCH_PATHS = /opt/mysql/include/mysql;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CLI_Test;
+				PROFILING_CODE = YES;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		93C8C6BE0DA5D8CE00B2391A /* Profiling */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = "/usr/bin/gcc-3.3";
+				COPY_PHASE_STRIP = YES;
+				CPLUSPLUS = "/usr/bin/g++-3.3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/build/Development\"";
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "-fno-coalesce";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CLI_Test;
+				PROFILING_CODE = YES;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Profiling;
+		};
+		93C8C6BF0DA5D8CE00B2391A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(NATIVE_ARCH_32_BIT)",
+					"$(NATIVE_ARCH_64_BIT)",
+					ppc,
+					ppc64,
+				);
+				CC = /usr/bin/gcc;
+				COPY_PHASE_STRIP = YES;
+				CPLUSPLUS = "/usr/bin/g++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(inherited)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/build/Deployment\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/build/Deployment\"";
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = /opt/mysql/include/mysql;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CLI_Test;
+				PROFILING_CODE = NO;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				VALID_ARCHS = "x86_64 ppc970 ppc7400 ppc64 i386 ppc";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		93C8C6C00DA5D8CE00B2391A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CC = "/usr/bin/gcc-3.3";
+				CPLUSPLUS = "/usr/bin/g++-3.3";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/build/Development\"";
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "-fno-coalesce";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CLI_Test;
+				PROFILING_CODE = YES;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		93C8C6D60DA5D8CE00B2391A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-Prepare_Distributions.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Prepare_Distributions;
+				PROFILING_CODE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		93C8C6D70DA5D8CE00B2391A /* Profiling */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-Prepare_Distributions.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Prepare_Distributions;
+				PROFILING_CODE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Profiling;
+		};
+		93C8C6D80DA5D8CE00B2391A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = NO;
+				HEADER_SEARCH_PATHS = /opt/mysql/include/mysql;
+				INFOPLIST_FILE = "Info-Prepare_Distributions.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Prepare_Distributions;
+				PROFILING_CODE = NO;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		93C8C6D90DA5D8CE00B2391A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-Prepare_Distributions.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/mysql/lib/mysql,
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Prepare_Distributions;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9316CD520DA47EAA00BF4FD4 /* Build configuration list for PBXProject "SMySQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9316CD3A0DA47EAA00BF4FD4 /* Development */,
+				9316CD3B0DA47EAA00BF4FD4 /* Profiling */,
+				9316CD3C0DA47EAA00BF4FD4 /* Deployment */,
+				9316CD3D0DA47EAA00BF4FD4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		93C8C65A0DA5D8CD00B2391A /* Build configuration list for PBXNativeTarget "SMySQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C8C65B0DA5D8CD00B2391A /* Development */,
+				93C8C65C0DA5D8CD00B2391A /* Profiling */,
+				93C8C65D0DA5D8CD00B2391A /* Deployment */,
+				93C8C65E0DA5D8CD00B2391A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		93C8C6820DA5D8CE00B2391A /* Build configuration list for PBXNativeTarget "SMySQL_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C8C6830DA5D8CE00B2391A /* Development */,
+				93C8C6840DA5D8CE00B2391A /* Profiling */,
+				93C8C6850DA5D8CE00B2391A /* Deployment */,
+				93C8C6860DA5D8CE00B2391A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		93C8C6AA0DA5D8CE00B2391A /* Build configuration list for PBXNativeTarget "SMySQL_bundled" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C8C6AB0DA5D8CE00B2391A /* Development */,
+				93C8C6AC0DA5D8CE00B2391A /* Profiling */,
+				93C8C6AD0DA5D8CE00B2391A /* Deployment */,
+				93C8C6AE0DA5D8CE00B2391A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		93C8C6BC0DA5D8CE00B2391A /* Build configuration list for PBXNativeTarget "CLI_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C8C6BD0DA5D8CE00B2391A /* Development */,
+				93C8C6BE0DA5D8CE00B2391A /* Profiling */,
+				93C8C6BF0DA5D8CE00B2391A /* Deployment */,
+				93C8C6C00DA5D8CE00B2391A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		93C8C6D50DA5D8CE00B2391A /* Build configuration list for PBXNativeTarget "Prepare_Distributions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C8C6D60DA5D8CE00B2391A /* Development */,
+				93C8C6D70DA5D8CE00B2391A /* Profiling */,
+				93C8C6D80DA5D8CE00B2391A /* Deployment */,
+				93C8C6D90DA5D8CE00B2391A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

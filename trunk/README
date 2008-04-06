@@ -1,0 +1,116 @@
+READ ME file for SMySQL, from MySQL Cocoa project.
+
+
+++++++++++++++++++++++++++++++++
++ Aim of this Framework:
+++++++++++++++++++++++++++++++++
+
+This framework is aimed at programers which want to connect to a MySQL database from a application developed with Cocoa (and maybe GNUStep, although I've not tried myself). The framework is based on the C API of MySQL and hence uses (or include) the libmysqlclient library coming from MySQL.
+
+Objects from this framework (namely MCPConnection and MCPResult) belongs to the Model layer and uses anly the Foundation API. The development is done with Project Builder (the IDE from Apple -previously NeXT-), and no other environment is supported (yet !! if you want to port it to another env. I'll be glad to provide you with all the information I know which can help you).
+
+
+++++++++++++++++++++++++++++++++
++ Flavours:
+++++++++++++++++++++++++++++++++
+
+The SMySQL framework comes in 3 flavours, that's because:
+1. Frameworks can have different policies to be installed on a system and used by an App.
+2. The framework relies on the code from the libmysqlclient library to work.
+
+Let's first adress these two points, and then the description of the flavoured should much clearer.
+
+1. Frameworks location (Indeed I would suggest you read Apple doc about OS X...):
+If a framework is used by many applications, it's better to have a central repository for him. This repository exist, it's the folder Library/Frameworks (of any of the domains: System, Network, User ...). Any application which need one of these framework just declare the name of the framework, and the dynamic linker will look for it in all these repository (in a given order which you'll find in Apple doc).
+-> Lets call this kind of framework a 'System-wide framework'
+
+In the mean time, an application programmer might want to wrap some of his application capabilities in a framework (to be able to use it in another app easily). In this case it's better if the framework does not take place (and namespace) in the central repository, even more it's better if you don't have to ask the user to install a framework to be able to run the app. In this aim you can embed the framework in the application bundle (in the "Contents/Frameworks/" folder of the bundle). Then you should set precisely the path to reach the framework (at compile time).
+-> Lets call this kind of framework a 'Bundled framework'
+
+
+2. The form libmysqlclient used:
+The same kind of question arise about libmysqlclient, it exists in two forms: static library (archive), or dynamic lib (shared object). 
+The dynamic lib is much better to use if the user had it setted personnaly (give coherence to all the applications using the client side of mysql) BUT it might forces the user to install one more thing. 
+
+In the case the application might be installed by users who doe not want to bother with mysql installation, it's much easier for the user to have the library staticly linked (once for all by the developer) in the framework.
+
+
+-- Now the 3 flavours of the framework:
+1. Target : SMySQL (System-wide framework using dynamic library)
+The framework is to be installed in one of the central repository. And because you're not afraid of this knid of installs, this one relies on the dynamic version of libmysqlclient. One of the big PLUS of this install is that you can use the framework even in "Foundation" type application (command line interface, launched in terminal).
+
+2. Target : SMySQL_static (System-wide framework using static library)
+Kind of a mix target. The framework is made to be installed in one of the central repository, but is not relying on the libmysqlclient dynamic library (instead it contains the static version of the library). The advantages over the SMySQL target is that it does not requires that you install the libmysqlclient.dylib, though you still can use this framework with "Foundation" tools.
+
+3. Target : SMySQL_bundled (bundled framework using static library)
+The framework is made to be embeded in the application bundle and DOES NOT rely on any external libraries (except the one provided as standard with Mac OS X). In this target the libmysqlclient is staticly linked in the framework. This is the target you should use if you are developing a GUI application (Cocoa Bundle application, or Cocoa Application in the Project Builder notations).
+
+NB: Only 1. and 2. can be used from a "Foundation" application (like CLI_Test, which BTW has its own read me). For GUI application the method recommended is 3. (following Apple recommendations).
+
+
+++++++++++++++++++++++++++++++++
++ Installation:
+++++++++++++++++++++++++++++++++
+
+If you want to install flavour 1 (target SMySQL), you have to have a working version of libmysqlclient together with the corresponding header files.
+
+
+For flavour 1: (YOU NEED YOUR OWN VERSION OF libmysqlclient.dylib).
+- Open the SMySQL.pbproj with Project builder.
+- Select SMySQL as current target.
+- Select the buildstyle you're interested in (Development : No optimisation, Profiling : optimisation and profiling infos, Deployment : optimisation).
+- Build (menu Build -> Build).
+- In the Finder, move the resulting framework (SMySQL.framework in the build subfolder of the project sources) to one of the Library/Frameworks places (you might need to create the Frameworks subdirectory yourself).
+
+(then you can try building and running CLI_Test target, for that read the CLI_Test/README file).
+
+
+
+For flavour 2: (YOU HAVE TO MAKE SURE libmysqlclient.a HAS ITS TOC UP TO DATE)
+- In terminal, cd to the top level of the sources of the framework.
+- Issue the command: (don't worry if you get some warnings)
+ranlib mysql_bins/libmysqlclient.a
+
+- Open the SMySQL.pbproj with Project builder.
+- Select SMySQL_static as current target.
+- Select the buildstyle you're interested in (Development : No optimisation, Profiling : optimisation and profiling infos, Deployment : optimisation).
+- Build (menu Build -> Build).
+- In the Finder, move the resulting framework (SMySQL_static.framework in the build subfolder of the project sources) to one of the Library/Frameworks places (you might need to create the Frameworks subdirectory yourself).
+
+(then you can try building and running CLI_Test target, for that read the CLI_Test/README file).
+
+
+
+For flavour 3: (YOU HAVE TO MAKE SURE libmysqlclient.a HAS ITS TOC UP TO DATE)
+- In terminal, cd to the top level of the sources of the framework.
+- Issue the command: (don't worry if you get some warnings)
+ranlib mysql_bins/libmysqlclient.a
+
+- Open the SMySQL.pbproj with Project builder.
+- Select SMySQL_bundled as current target.
+- Select the buildstyle you're interested in (Development : No optimisation, Profiling : optimisation and profiling infos, Deployment : optimisation).
+- Build (menu Build -> Build).
+The produced framework (SMySQL_bundle.framework in the build subfolder of the project sources) is ready to be bundled with the Cocoa application which is using it. To know how to do that, the best is to go to Apple documentation:
+file:///Developer/Documentation/DeveloperTools/ProjectBuilder/ProjectBuilder.help/Contents/Resources/English.lproj/Frameworks/_Embedding__Application.html
+
+Note 1: You can browse this document also in going in ProjectBuilder, Menu Help->Project Builder Help, then choose “Creating Frameworks and Libraries” -> “Embedding a Framework in an Application”
+Note 2: The SMySQL_bundled target is already taking care of the first part of the work described in the documentation (you DO NOT have to take care of the paragraph “Prepare the Framework to be Embedded”, it is already prepared for you).
+
+
+
+In all the three case the html doc is generated if you have AutoDoc (http://www.misckit.com/press/press_autodoc_2.0b7.html) installed. It will be in the directory:
+SMySQL.framework/Resources/English.lproj/Documentation/
+(or SMySQL_static.framework/Resources/English.lproj/Documentation/, or SMySQL_bundle.framework/Resources/English.lproj/Documentation/).
+
+++++++++++++++++++++++++++++++++
++ Use:
+++++++++++++++++++++++++++++++++
+
+The CLI_Test application can be a good example to see how to use the framework.
+
+
+More to come....
+
+
+2003-08-16; Serge Cohen.
+

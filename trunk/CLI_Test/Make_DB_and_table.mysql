@@ -1,0 +1,25 @@
+grant select,insert,update,delete,index,alter,create,drop on test_mysqlclass.* to ObjC@'localhost' identified by 'MySQL_class';
+flush privileges;
+
+-- Maybe you want to keep the next line commented out, so that if you enrich the DB for your test the modification are not droped.
+-- DROP DB IF EXISTS test_mysqlclass;
+CREATE DATABASE IF NOT EXISTS test_mysqlclass;
+USE test_mysqlclass;
+
+DROP TABLE IF EXISTS test1;
+CREATE TABLE test1 (
+  test1_id int(11) NOT NULL auto_increment,
+  test1_name char(100) NOT NULL default '',
+  test1_desc char(250) NOT NULL default 'non documented',
+  test1_text text NOT NULL default '',
+  test1_ll   bigint NOT NULL,
+  test1_ull  bigint unsigned NOT NULL,
+  PRIMARY KEY  (test1_id)
+) TYPE=MyISAM COMMENT='A simple test table for CLI_Test application running with SMySQL framework.';
+
+
+INSERT INTO test1 (test1_id, test1_name, test1_desc, test1_text, test1_ll) VALUES (1,'first','first entry in the table', 'this is a text, which is indeed stored in the DB as a blob, hence you have to use the proper method to display it as a NSString rather than NSData...', '2147483647');
+INSERT INTO test1 (test1_id, test1_name, test1_desc, test1_text, test1_ll) VALUES (2,'second','second entry in the table', 'just to have more than just one line in the test1 table...', '2147483648');
+INSERT INTO test1 (test1_id, test1_name, test1_desc, test1_text, test1_ll) VALUES (3,'third','third, and last, entry in the table', 'I like multiple lines in DB tables, but I\'m too lazy to go further than 3!!', '9223372036854775806');
+INSERT INTO test1 (test1_id, test1_name, test1_desc, test1_text, test1_ll, test1_ull) VALUES (4,'fourth','fourth entry in the table', 'just to UNSIGNED BIGINT...', '18446744073709551612', '18446744073709551612');
+
