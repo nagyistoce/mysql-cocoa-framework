@@ -84,33 +84,35 @@ Initialize the class version to 2.3.1
 initialise a MCPResult, it is used internally by MCPConnection !{queryString:} method: the only proper way to get a running MCPResult object.
 "*/
 {
-    self = [super init];
-    mEncoding = theEncoding;
-    if (mResult) {
-        mysql_free_result(mResult);
-        mResult = NULL;
-    }
-    if (mNames) {
-        [mNames release];
-        mNames = NULL;
-    }
-    mResult = mysql_store_result(mySQLPtr);
-    if (mResult) {
-        mNumOfFields = mysql_num_fields(mResult);
-    }
-    else {
-        mNumOfFields = 0;
-    }
-    /*
-     if (mResult == NULL) {
-         [self autorelease];
-         return nil;
-     }
-     */
-    if (mMySQLLocales == NULL) {
-        mMySQLLocales = [[MCPConnection getMySQLLocales] retain];
-    }
-    return self;
+    if(self = [super init]) {
+		mEncoding = theEncoding;
+		if (mResult) {
+			mysql_free_result(mResult);
+			mResult = NULL;
+		}
+		if (mNames) {
+			[mNames release];
+			mNames = NULL;
+		}
+		mResult = mysql_store_result(mySQLPtr);
+		if (mResult) {
+			mNumOfFields = mysql_num_fields(mResult);
+		}
+		else {
+			mNumOfFields = 0;
+		}
+		/*
+		 if (mResult == NULL) {
+			 [self autorelease];
+			 return nil;
+		 }
+		 */
+		if (mMySQLLocales == NULL) {
+			mMySQLLocales = [[MCPConnection getMySQLLocales] retain];
+		}
+		return self;
+	} else
+		return nil;
 }
 
 
@@ -121,33 +123,35 @@ Initialise a MCPResult with the MYSQL_RES pointer (returned by such a function a
  NB: MCPResult should be made by using one of the method of MCPConnection.
 "*/
 {
-    self = [super init];
-    mEncoding = theEncoding;
-    if (mResult) {
-        mysql_free_result(mResult);
-        mResult = NULL;
-    }
-    if (mNames) {
-        [mNames release];
-        mNames = NULL;
-    }
-    mResult = mySQLResPtr;
-    if (mResult) {
-        mNumOfFields = mysql_num_fields(mResult);
-    }
-    else {
-        mNumOfFields = 0;
-    }
-    /*
-     if (mResult == NULL) {
-        [self autorelease];
-        return nil;
-    }
-     */
-    if (mMySQLLocales == NULL) {
-        mMySQLLocales = [[MCPConnection getMySQLLocales] retain];
-    }
-    return self;    
+    if(self = [super init]) {
+		mEncoding = theEncoding;
+		if (mResult) {
+			mysql_free_result(mResult);
+			mResult = NULL;
+		}
+		if (mNames) {
+			[mNames release];
+			mNames = NULL;
+		}
+		mResult = mySQLResPtr;
+		if (mResult) {
+			mNumOfFields = mysql_num_fields(mResult);
+		}
+		else {
+			mNumOfFields = 0;
+		}
+		/*
+		 if (mResult == NULL) {
+			[self autorelease];
+			return nil;
+		}
+		 */
+		if (mMySQLLocales == NULL) {
+			mMySQLLocales = [[MCPConnection getMySQLLocales] retain];
+		}
+		return self;    
+	} else
+		return nil;
 }
 
 - (id) init
@@ -155,21 +159,23 @@ Initialise a MCPResult with the MYSQL_RES pointer (returned by such a function a
 Empty init, normaly of NO use to the user, again, MCPResult should be made through calls to MCPConnection
 "*/
 {
-    self = [super init];
-    mEncoding = [MCPConnection defaultMySQLEncoding];
-    if (mResult) {
-        mysql_free_result(mResult);
-        mResult = NULL;
-    }
-    if (mNames) {
-        [mNames release];
-        mNames = NULL;
-    }
-    if (mMySQLLocales == NULL) {
-        mMySQLLocales = [[MCPConnection getMySQLLocales] retain];
-    }
-    mNumOfFields = 0;
-    return self;    
+    if(self = [super init]) {
+		mEncoding = [MCPConnection defaultMySQLEncoding];
+		if (mResult) {
+			mysql_free_result(mResult);
+			mResult = NULL;
+		}
+		if (mNames) {
+			[mNames release];
+			mNames = NULL;
+		}
+		if (mMySQLLocales == NULL) {
+			mMySQLLocales = [[MCPConnection getMySQLLocales] retain];
+		}
+		mNumOfFields = 0;
+		return self;    
+	} else
+		return nil;
 }
 
 
