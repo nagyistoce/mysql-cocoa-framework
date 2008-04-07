@@ -41,12 +41,18 @@
 		MCPConnect = nil;
 		MCPMainWinCont = nil;
 		MCPConnectedWinCont = nil;
-      MCPWillCreateNewDB = NO;
-      MCPModelName = @"";
+		MCPWillCreateNewDB = NO;
+		MCPModelName = @"";
 	}
-   if (NSClassFromString(@"MCPModel")) { // If the MCPEntrepriseKit is there, use it:
+	
+	/* 
+		Commented out to get rid of the warning message since only the original author
+		has that and I don't feel like seeing the warnings every time this compiles 
+		- glimberg 04/06/2008
+	 */
+   /*if (NSClassFromString(@"MCPModel")) { // If the MCPEntrepriseKit is there, use it:
       [NSClassFromString(@"MCPModel") getSharedModel];
-   }
+   }*/
 	return self;
 }
 

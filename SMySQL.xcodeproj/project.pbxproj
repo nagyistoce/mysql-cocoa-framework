@@ -1030,6 +1030,8 @@
 				OTHER_LDFLAGS = (
 					"-seg1addr",
 					0x08800000,
+					"-lssl",
+					"-lcrypto",
 				);
 				PRODUCT_NAME = SMySQL;
 				PROFILING_CODE = NO;
@@ -1188,6 +1190,8 @@
 				OTHER_LDFLAGS = (
 					"-seg1addr",
 					0x08800000,
+					"-lssl",
+					"-lcrypto",
 				);
 				OTHER_LIBTOOL_FLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -1347,6 +1351,8 @@
 				OTHER_LDFLAGS = (
 					"-seg1addr",
 					0x08800000,
+					"-lssl",
+					"-lcrypto",
 				);
 				OTHER_LIBTOOL_FLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -1499,6 +1505,10 @@
 					/opt/mysql/lib/mysql,
 				);
 				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-lssl",
+					"-lcrypto",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = CLI_Test;
 				PROFILING_CODE = NO;
@@ -1617,7 +1627,10 @@
 					/opt/mysql/lib/mysql,
 				);
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-lssl",
+					"-lcrypto",
+				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Prepare_Distributions;
 				PROFILING_CODE = NO;
